@@ -1,4 +1,4 @@
 Flask==3.0.0
 Pillow==9.2.0
-tensorflow==2.15.0
-keras==3.1.1
+tensorflow==2.16.1
+keras==3.2.1
