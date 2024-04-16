@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaria Detection</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Malaria Detection</h1>
+
+        <!-- Introduction to Malaria -->
+        <section>
+            <h2>Introduction to Malaria</h2>
+            <p>Malaria is a life-threatening disease caused by parasites that are transmitted to people through the bites of infected mosquitoes.</p>
+            <p>It is a major public health concern, particularly in tropical and subtropical regions of the world.</p>
+        </section>
+
+        <!-- Importance of Early Detection -->
+        <section>
+            <h2>Importance of Early Detection</h2>
+            <p>Early detection of malaria is crucial for effective treatment and prevention of complications.</p>
+            <p>Timely diagnosis allows for prompt initiation of treatment, reducing the risk of severe illness and death.</p>
+        </section>
+
+        <!-- How the Detection Model Works -->
+        <section>
+            <h2>How the Detection Model Works</h2>
+            <p>Our malaria detection model uses advanced machine learning techniques to analyze microscopic images of blood samples.</p>
+            <p>By identifying the presence of malaria parasites in the blood, the model helps in accurate and efficient diagnosis.</p>
+        </section>
+
+        <!-- Upload Form for Image Prediction -->
+        <form id="upload-form" method="post" enctype="multipart/form-data">
+            <label for="file-input">Choose Image</label>
+            <input type="file" name="file" id="file-input" accept="image/*" required>
+            <br><br>
+            <button type="submit">Predict</button>
+        </form>
+
+        <!-- Display Prediction Result -->
+        <div id="result"></div>
+    </div>
+    
+    <script src="../script.js"></script>
+</body>
+</html>
