@@ -9,7 +9,6 @@
 <body>
     <div id="container">
         <h1>Malaria Detection</h1>
-
         <!-- Introduction to Malaria -->
         <section>
             <h2>Introduction to Malaria</h2>
@@ -33,16 +32,17 @@
 
         <!-- Upload Form for Image Prediction -->
         <form id="upload-form" method="post" enctype="multipart/form-data">
-            <label for="file-input">Choose Image</label>
-            <input type="file" name="file" id="file-input" accept="image/*" required>
-            <br><br>
+            <div id="drop-zone" class="drop-zone">
+                <p>Drag & Drop Image Here</p>
+                <p>or</p>
+                <label for="file-input" class="file-label">Choose Image</label>
+                <input type="file" name="file" id="file-input" accept="image/*" required>
+            </div>
             <button type="submit">Predict</button>
         </form>
-
         <!-- Display Prediction Result -->
-        <div id="result"></div>
+        <div id="result" class="prediction-result"></div>
     </div>
-    
     <script src="../script.js"></script>
 </body>
 </html>
