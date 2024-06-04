@@ -1,3 +1,11 @@
+/* Ensure html and body cover the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply background image to the entire page */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -6,7 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0f0;
+    background: url('../images/1.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 #container {
@@ -14,9 +23,10 @@ body {
     padding: 20px;
     border: 2px solid #5642C5;
     border-radius: 10px;
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 1000px;
+    margin-bottom: 20px; /* Add margin between container and prediction result */
 }
 
 h1 {
@@ -28,7 +38,7 @@ input[type="file"] {
     display: none;
 }
 
-label {
+.file-label {
     cursor: pointer;
     background-color: #5642C5;
     color: #ffffff;
@@ -39,8 +49,26 @@ label {
     display: inline-block; /* Ensure label and input are on the same line */
 }
 
-label:hover {
+.file-label:hover {
     background-color: #452E8E;
+}
+
+.drop-zone {
+    border: 2px dashed #5642C5;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+}
+
+.drop-zone p {
+    margin: 10px 0;
+    color: #5642C5;
+}
+
+.drop-zone.dragging {
+    background-color: #e0e0e0;
 }
 
 button[type="submit"] {
@@ -58,7 +86,10 @@ button[type="submit"]:hover {
 }
 
 #result {
-    margin-top: 20px;
     font-weight: bold;
     color: #5642C5;
+}
+
+.prediction-result {
+    margin-top: 20px; /* Adjust margin as needed */
 }
