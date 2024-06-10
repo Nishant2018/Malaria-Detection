@@ -1,6 +1,3 @@
-Certainly! Below is an example of what you could include in your `README.md` file on GitHub:
-
-```markdown
 # Malaria Detection
 
 This is a web application built with Flask for detecting malaria in microscopic images of blood samples. It uses a deep learning model trained on TensorFlow/Keras to classify images as either infected (parasitized) or uninfected.
@@ -66,7 +63,3 @@ Contributions are welcome! If you would like to contribute to this project, feel
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
 ```
-
-Make sure to replace `"yourusername"` in the clone URL with your GitHub username and adjust any other details as needed.
-
-This `README.md` provides an overview of the project, installation instructions, usage guidelines, contribution guidelines, and licensing information. It's a good starting point, and you can customize it further based on your project's specific requirements.
